@@ -20,7 +20,8 @@
                           CornerRadius="0"
                           Width="40"
                           Height="40"
-                          Click="GoBackButton_Click">
+                          Click="GoBackButton_Click"
+                          IsEnabled="False">
                 <AppBarButton.Content>
                     <!--You can also use &#xE830; for bold back icon.-->
                     <FontIcon Glyph="&#xE72B;"/>
