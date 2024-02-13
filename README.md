@@ -1,2 +1,2 @@
 # GlobalBackButtonTemplate
-A template for title bar button usage
+A UWP template for title bar button usage
