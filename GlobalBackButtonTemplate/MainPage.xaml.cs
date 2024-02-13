@@ -26,5 +26,10 @@ namespace GlobalBackButtonTemplate
         {
             this.InitializeComponent();
         }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

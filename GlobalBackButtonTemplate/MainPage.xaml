@@ -8,7 +8,33 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <RelativePanel>
+        <!--TitleBar-->
+        <RelativePanel x:Name="TitleBar"
+                       RelativePanel.AlignLeftWithPanel="True"
+                       RelativePanel.AlignRightWithPanel="True"
+                       RelativePanel.AlignTopWithPanel="True"
+                       Height="48">
+            <!--Go back button-->
+            <AppBarButton x:Name="GoBackButton"
+                          CornerRadius="0"
+                          Width="40"
+                          Height="40"
+                          Click="GoBackButton_Click">
+                <AppBarButton.Content>
+                    <!--You can also use &#xE830; for bold back icon.-->
+                    <FontIcon Glyph="&#xE72B;"/>
+                </AppBarButton.Content>
+            </AppBarButton>
+        </RelativePanel>
+        <Frame x:Name="NavigationFrame"
+               Margin="0 0 0 0"
+               CornerRadius="0"
+               RelativePanel.AlignLeftWithPanel="True"
+               RelativePanel.AlignRightWithPanel="True"
+               RelativePanel.Below="TitleBar"
+               RelativePanel.AlignBottomWithPanel="True">
+            
+        </Frame>
+    </RelativePanel>
 </Page>
