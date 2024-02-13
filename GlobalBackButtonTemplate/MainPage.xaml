@@ -14,7 +14,8 @@
                        RelativePanel.AlignLeftWithPanel="True"
                        RelativePanel.AlignRightWithPanel="True"
                        RelativePanel.AlignTopWithPanel="True"
-                       Height="48">
+                       Height="48"
+                       Background="Gray">
             <!--Go back button-->
             <AppBarButton x:Name="GoBackButton"
                           CornerRadius="0"
@@ -27,6 +28,13 @@
                     <FontIcon Glyph="&#xE72B;"/>
                 </AppBarButton.Content>
             </AppBarButton>
+            <Rectangle x:Name="DragBar"
+                       RelativePanel.AlignTopWithPanel="True"
+                       RelativePanel.AlignBottomWithPanel="True"
+                       RelativePanel.RightOf="GoBackButton"
+                       RelativePanel.AlignRightWithPanel="True">
+                
+            </Rectangle>
         </RelativePanel>
         <Frame x:Name="NavigationFrame"
                Margin="0 0 0 0"
